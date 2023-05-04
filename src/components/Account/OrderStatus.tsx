@@ -13,8 +13,10 @@ const OrderStatus = () => {
         <div className="info-content-order-has-pro">
           <div className="info-content-order-has-pro-item">
             <div className="cart-has-products-title">
-              <ul className="has-products-title-list">
-                <li className="has-products-title-item">Products</li>
+              {/* <ul className="has-products-title-list">
+                <li className="has-products-title-item">
+                Products
+                </li>
                 <li className="has-products-title-item hide-on-mobile">
                   Price
                 </li>
@@ -24,7 +26,7 @@ const OrderStatus = () => {
                 <li className="has-products-title-item add-little-margin2">
                   Message
                 </li>
-              </ul>
+              </ul> */}
             </div>
             <div className="cart-has-products-pro">
               {/* 1 order */}
