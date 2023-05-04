@@ -41,7 +41,7 @@ export const submitRegisterLoginAxios = async data => {
   try {
     await AuthClient.post("register", data);
   } catch (e) {
-    alert("Something wrong when register, try again later!" + e);
+    // alert("Something wrong when register, try again later!" + e);
     return false;
   }
   return submitLoginAxios({ username: data.username, password: data.password });
