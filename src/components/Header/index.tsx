@@ -50,14 +50,30 @@ const Index = () => {
                   </Link>
                 </li>
                 <li className="header-navbar-item">
-                  <span className="header-navbar-item-link">WOMEN</span>
-                </li>
-                <li className="header-navbar-item">
-                  <span className="header-navbar-item-link">MEN</span>
+                  <span className="header-navbar-item-link">
+                    <Link
+                      to="/search?key=pocket"
+                      className="header-navbar-item-link">
+                      POCKET
+                    </Link>
+                  </span>
                 </li>
                 <li className="header-navbar-item">
                   <span className="header-navbar-item-link">
-                    SWEATSHIRTS & HOODIES
+                    <Link
+                      to="/search?key=jean"
+                      className="header-navbar-item-link">
+                      JEAN
+                    </Link>
+                  </span>
+                </li>
+                <li className="header-navbar-item">
+                  <span className="header-navbar-item-link">
+                    <Link
+                      to="/search?key=sweatshirt"
+                      className="header-navbar-item-link">
+                      SWEATSHIRT
+                    </Link>
                   </span>
                 </li>
                 {/*<li className="header-navbar-item">*/}

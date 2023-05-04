@@ -130,8 +130,8 @@ const Index = () => {
                     <div className="filter-sort-showing-select hide-on-mobile">
                       <select>
                         <option>12 Items</option>
-                        <option>4 Items</option>
-                        <option>8 Items</option>
+                        {/* <option>4 Items</option>
+                        <option>8 Items</option> */}
                       </select>
                     </div>
                     <div className="filter-sort-showing-sort">
