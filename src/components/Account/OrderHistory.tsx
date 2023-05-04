@@ -15,14 +15,14 @@ const OrderHistory = ({orderItem}) => {
         <div className="info-content-order-has-pro">
           <div className="info-content-order-has-pro-item">
             <div className="cart-has-products-title">
-              <ul className="has-products-title-list">
+              {/* <ul className="has-products-title-list">
                 <li className="has-products-title-item">Products</li>
                 <li className="has-products-title-item hide-on-mobile">
                   Status
                 </li>
                 <li className="has-products-title-item">Date</li>
                 <li className="has-products-title-item">Message</li>
-              </ul>
+              </ul> */}
             </div>
             {orderItem?.length > 0 ? (
               orderItem.map(x => {
