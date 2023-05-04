@@ -107,9 +107,7 @@ const Index = () => {
               <div className="row no-gutters align__item-center add-little-fix1">
                 <div className="col p-6 hide-on-mobile">
                   <div className="body-background-filter">
-                    <p className="background-filter-show fz-1-6rem">
-                      Showing 17–32 of 72 results
-                    </p>
+                    <p className="background-filter-show fz-1-6rem"></p>
                   </div>
                 </div>
                 <div className="col p-6 m-6 hide-on-pc">
