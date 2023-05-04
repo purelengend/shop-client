@@ -43,7 +43,7 @@ const LoginAuth = () => {
   const submitLogin = async data => {
     const loginIdentity = await submitLoginAxios(data);
     addUser(loginIdentity);
-    navigate("");
+    navigate(0);
   };
 
   return (
