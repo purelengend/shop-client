@@ -28,7 +28,7 @@ export const submitLoginAxios = async data => {
   }
 
   try {
-    userWishlist = await ShopClient.get(`/shopping/wishlist?userId=${currenData.id}`);
+    userWishlist = await ShopClient.get(`/wishlist?userId=${currenData.id}`);
     allInfo.userWishlist = userWishlist.data.itemList;
   } catch (e) {
     allInfo.userWishlist = [];
