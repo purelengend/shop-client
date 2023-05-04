@@ -3,7 +3,7 @@ import { logLoading } from "../../../log_color.dev";
 import { HOST_URL } from "./host";
 
 const ShopClient = axios.create({
-  baseURL: HOST_URL.length > 0 ? HOST_URL : "http://localhost:3003/shopping/",
+  baseURL: HOST_URL.length > 0 ? `${HOST_URL}/shopping/` : "http://localhost:3003/shopping/",
 });
 
 ShopClient.interceptors.request.use(

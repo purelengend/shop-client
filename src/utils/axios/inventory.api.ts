@@ -1,9 +1,9 @@
 import axios from "axios";
-import {logLoading} from "../../../log_color.dev";
+import { logLoading } from "../../../log_color.dev";
 import { HOST_URL } from "./host";
 
 const InventoryClient = axios.create({
-  baseURL: HOST_URL.length > 0 ? HOST_URL : "http://localhost:3002/inventory/",
+  baseURL: HOST_URL.length > 0 ? `${HOST_URL}/inventory/` : "http://localhost:3002/inventory/",
 });
 
 InventoryClient.interceptors.request.use(
@@ -20,4 +20,4 @@ InventoryClient.interceptors.request.use(
   error => Promise.reject(error),
 );
 
-export {InventoryClient};
+export { InventoryClient };

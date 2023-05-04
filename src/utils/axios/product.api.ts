@@ -3,7 +3,7 @@ import { logLoading } from "../../../log_color.dev";
 import { HOST_URL } from "./host";
 
 const ProductClient = axios.create({
-  baseURL: HOST_URL.length > 0 ? HOST_URL : "http://localhost:3000/product/",
+  baseURL: HOST_URL.length > 0 ? `${HOST_URL}/product/` : "http://localhost:3000/product/",
   // timeout: 8000,
   // headers: {
   //   Accept: 'application/json',

@@ -3,7 +3,7 @@ import { logLoading } from "../../../log_color.dev";
 import { HOST_URL } from "./host";
 
 const AuthClient = axios.create({
-  baseURL: HOST_URL.length > 0 ? HOST_URL : "http://localhost:3004/auth/",
+  baseURL: HOST_URL.length > 0 ? `${HOST_URL}/auth/` : "http://localhost:3004/auth/",
 });
 
 AuthClient.interceptors.request.use(

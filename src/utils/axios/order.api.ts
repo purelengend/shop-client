@@ -3,7 +3,7 @@ import { logLoading } from "../../../log_color.dev";
 import { HOST_URL } from "./host";
 
 const OrderClient = axios.create({
-  baseURL: HOST_URL.length > 0 ? HOST_URL : "http://localhost:8080/order/",
+  baseURL: HOST_URL.length > 0 ? `${HOST_URL}/order/` : "http://localhost:8080/order/",
 });
 
 OrderClient.interceptors.request.use(

@@ -3,7 +3,7 @@ import { logLoading } from "../../../log_color.dev";
 import { HOST_URL } from "./host";
 
 const ReviewClient = axios.create({
-  baseURL: HOST_URL.length > 0 ? HOST_URL : "http://localhost:3001/review/",
+  baseURL: HOST_URL.length > 0 ? `${HOST_URL}/review/` : "http://localhost:3001/review/",
 });
 
 ReviewClient.interceptors.request.use(
